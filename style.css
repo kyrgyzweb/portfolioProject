@@ -1,9 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+
 html {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(45deg, #0a192f, #183B59);
+    background-repeat: no-repeat;
+    padding-bottom: 110px;
 }
 
 header {
@@ -55,4 +69,110 @@ nav ul li a {
 nav ul li a:hover {
     color: springgreen;
     transition: all, .5s;
+}
+
+#main-section {
+    border: 1px solid red;
+    position: relative;
+    top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main {
+    width: 90%;
+    position: relative;
+    left: 10%;
+}
+.aside-left {
+    width: 10%;
+    position: fixed;
+    height: 100%;
+}
+
+.aside-left ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.aside-left ul::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    margin: 0px auto;
+    background-color: lightblue;
+}
+
+.aside-left ul li{
+    margin-top: 20px;
+}
+
+.aside-left ul li a{
+    color: whitesmoke;
+}
+
+.aside-left ul li i{
+    cursor: pointer;
+}
+
+.aside-left ul li i:hover{
+    color: springgreen;
+    transition: all, .5s;
+}
+
+.aside-left ul li:last-of-type{
+    margin-bottom: 20px;
+}
+
+/* About aection  */
+main .about {
+    width: 80%;
+    padding-left: 30px;
+    padding-bottom: 1.5em;
+}
+
+main .about h1 {
+    font-size: 1rem;
+    color: springgreen;
+    margin-bottom: 10px;
+}
+
+main .about h2 {
+    font-size: 3.3rem;
+    margin: 0;
+    color: #F9F6EE;
+    text-shadow: 0 1px 1px #607D8B;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+main .about h3 {
+    font-size: 3rem;
+    margin: 0;
+    color: #B2BEB5;
+}
+main .about p {
+    line-height: 1.5;
+    width: 80%;
+    text-align: justify;
+}
+
+main .about button {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid springgreen;
+    padding: 10px 15px;
+    background: no-repeat;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .about button:hover {
+    background-color: #32735580;
+    transform: all, .5s;
 }
